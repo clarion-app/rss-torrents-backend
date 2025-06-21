@@ -1,0 +1,35 @@
+{
+  "name": "clarion-app/rss-torrents-backend",
+  "version": "1.0.0",
+  "description": "Describe your package",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ClarionApp\\RssTorrents\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Tim Schwartz",
+      "email": "tim@metaverse.systems"
+    }
+  ],
+  "require": {
+    "clarion-app/eloquent-multichain-bridge": "dev-main",
+    "clarion-app/backend": "dev-main",
+    "willvincent/feeds": "dev-master"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ClarionApp\\RssTorrents\\RssTorrentsServiceProvider"
+      ]
+    },
+    "clarion": {
+      "app-name": "@clarion-app/rss-torrents",
+      "description": "Provides operations retrieve torrents from RSS feeds."
+    }
+  },
+  "minimum-stability": "dev"
+}
