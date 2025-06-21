@@ -1,7 +1,7 @@
 {
   "name": "clarion-app/rss-torrents-backend",
   "version": "1.0.0",
-  "description": "Describe your package",
+  "description": "Manages RSS feeds and retrieves torrents from them.",
   "type": "library",
   "license": "MIT",
   "autoload": {
