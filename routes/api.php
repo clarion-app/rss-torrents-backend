@@ -13,6 +13,6 @@ Route::group(['middleware'=>['auth:api'], 'prefix'=>$this->routePrefix ], functi
     
     // Additional series routes
     Route::get('/series-subscribed', [SeriesController::class, 'subscribed']);
-    Route::patch('/series/{series}/toggle-subscription', [SeriesController::class, 'toggleSubscription']);
+    Route::post('/series/{series}/toggle-subscription', [SeriesController::class, 'toggleSubscription']);
     Route::patch('/series/bulk-subscription', [SeriesController::class, 'bulkUpdateSubscription']);
 });
