@@ -26,6 +26,7 @@ class HttpApiCall
     public function post($body)
     {
         $response = Http::withHeaders($this->headers)
+                    ->withoutVerifying()
                     ->post($this->url, $body);
 
         return $response;
