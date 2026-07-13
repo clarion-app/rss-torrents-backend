@@ -95,7 +95,7 @@ class CheckFeeds extends Command
                     foreach($torrents as $torrent)
                     {
                         if($downloaded) continue;
-                        if(($torrent['resolution'] != "720p") && ($torrent['resolution'] != "1080p")) continue;
+                        if($torrent['resolution'] != "1080p") continue;
 
                         $downloaded = true;
                         // Check if the episode already exists
